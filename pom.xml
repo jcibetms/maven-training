@@ -3,4 +3,9 @@
   <groupId>the.laxmikant</groupId>
   <artifactId>maven_training</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <scm>
+  	<connection>scm:svn:https://github.com/jcibetms/maven-training.git</connection>
+  	<developerConnection>scm:svn:https://github.com/jcibetms/maven-training.git</developerConnection>
+  	<url>https://github.com/jcibetms/maven-training.git</url>
+  </scm>
 </project>
