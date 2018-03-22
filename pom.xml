@@ -4,6 +4,9 @@
 	<groupId>the.laxmikant</groupId>
 	<artifactId>maven_training</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<properties>
+		<project.scm.id>github</project.scm.id>
+	</properties>
 	<scm>
 		<connection>scm:git:https://github.com/jcibetms/maven-training.git</connection>
 		<developerConnection>scm:git:https://github.com/jcibetms/maven-training.git</developerConnection>
@@ -35,7 +38,7 @@
 						</goals>
 						<configuration>
 							<basedir>./</basedir>
-<!-- 							<includes>versions/*</includes> -->
+							<!-- <includes>versions/*</includes> -->
 							<message>[Add Version to git]</message>
 						</configuration>
 					</execution>
