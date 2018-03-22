@@ -17,8 +17,29 @@
 				<artifactId>maven-scm-plugin</artifactId>
 				<version>1.9.5</version>
 				<configuration>
-					<connectionType>connection</connectionType>
+					<message>Add version files to git</message>
+					<systemProperties>
+						<systemProperty>
+							<name>message</name>
+							<value>[Add Version to git]</value>
+						</systemProperty>
+					</systemProperties>
 				</configuration>
+				<executions>
+					<execution>
+						<id>add-version-to-git</id>
+						<phase>package</phase>
+						<goals>
+							<goal>add</goal>
+							<goal>checkin</goal>
+						</goals>
+						<configuration>
+							<basedir>./</basedir>
+							<includes>versions/*</includes>
+							<message>[Add Version to git]</message>
+						</configuration>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>
