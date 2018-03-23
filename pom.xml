@@ -20,7 +20,7 @@
 				<artifactId>maven-scm-plugin</artifactId>
 				<version>1.9.5</version>
 				<configuration>
-					<message>Add new files to git</message>
+					<message>Add new files to git.</message>
 					<systemProperties>
 						<systemProperty>
 							<name>message</name>
